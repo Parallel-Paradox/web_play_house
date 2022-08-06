@@ -5,6 +5,8 @@ A web play house with some multi player games.
 ## Project setup
 
 ```
+npm install -g @vue/cli typescript
+vue add typescript
 npm install
 ```
 
