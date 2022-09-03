@@ -10,6 +10,8 @@ vue add typescript
 npm install
 ```
 
+Disable the built-in typescript plugin of VSCode.
+
 ### Compiles and hot-reloads for development
 
 ```

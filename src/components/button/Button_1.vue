@@ -1,7 +1,5 @@
 <template>
-<div>
-    <button><span class="button_top">Button</span></button>
-</div>
+<button><span class="button_top">Button</span></button>
 </template>
 
 <script lang="ts">
@@ -16,10 +14,11 @@ button {
     --button_radius: 0.75em;
     --button_color: #e8e8e8;
     --button_outline_color: #000000;
+    --button_thick: 0.3em;
     font-size: 17px;
     font-weight: bold;
     border: none;
-    padding: 0;
+    margin-top: var(--button_thick);
     border-radius: var(--button_radius);
     background: var(--button_outline_color);
 }
@@ -32,13 +31,13 @@ button {
     padding: 0.75em 1.5em;
     background: var(--button_color);
     color: var(--button_outline_color);
-    transform: translateY(-0.2em);
+    transform: translateY(calc((-2 / 3) * var(--button_thick)));
     transition: transform 0.1s ease;
 }
 
 button:hover .button_top {
     /* Pull the button upwards when hovered */
-    transform: translateY(-0.33em);
+    transform: translateY(calc((-1) * var(--button_thick)));
 }
 
 button:active .button_top {

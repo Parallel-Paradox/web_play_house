@@ -13,3 +13,10 @@ import Button_1 from './components/button/Button_1.vue';
 })
 export default class App extends Vue {}
 </script>
+
+<style>
+* {
+    padding: 0;
+    margin: 0;
+}
+</style>
